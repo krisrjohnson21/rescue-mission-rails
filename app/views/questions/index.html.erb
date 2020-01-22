@@ -1,0 +1,13 @@
+<h1>Questions Index Page</h1>
+
+<ul>
+  <% @questions.each do |question| %>
+    <br />
+    <li>
+      <strong> <%= link_to question.title, question %></strong>
+      <%= question.created_at.strftime("%B %d %Y") %>
+    </li>
+  <% end %>
+</ul>
+<br />
+<h4> <%= link_to "Add A New Question", new_question_path %> </h4>
