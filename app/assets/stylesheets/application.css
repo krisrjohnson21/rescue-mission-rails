@@ -16,11 +16,21 @@
 
  */
 
-h1, h3, h4, ul {
+h1, h2, h3, h4, h5, ul {
   padding-left: 20px;
 }
 
+em {
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.main {
+  margin: 10px -10px 0px 20px;
+}
+
 .error {
+  padding-left: 10px;
   font-weight: bold;
   font-size: 24px;
   color: #FF0000;
@@ -29,4 +39,9 @@ h1, h3, h4, ul {
 .form {
   width: 80%;
   margin: 0px auto;
+}
+
+.width {
+  width: 60%;
+  padding-left: 20px;
 }
