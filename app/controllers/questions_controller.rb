@@ -43,9 +43,9 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    question = Question.find(params["id"])
-    question.answers.destroy
-    question.destroy
+    @question = Question.find(params["id"])
+    @question.answers.destroy
+    @question.destroy
     redirect_to questions_path
   end
 
